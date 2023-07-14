@@ -2,7 +2,7 @@
 
 Hello
 
-The video for the link is: https://drive.google.com/file/d/1o1ACcv02tUVdqdOjA1n_JGowQ95sXB33/view?usp=drive_link
+The video for the link is: https://drive.google.com/file/d/1svkWH96w7R_WQ_blHUOIxNTTbFBmSZBj/view?usp=drive_link
 
 There was no use for React states to be used as this is a static page.
 There were no CRUD operations involved as there was no sending/receiving of data during the entire process.
