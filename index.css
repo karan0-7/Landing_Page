@@ -23,6 +23,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
 .arrow{width: 20px;height: 20px;cursor: pointer;transform: rotate(0deg);transition-duration: 0.25s; margin-left: 5px;}
@@ -42,6 +43,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 60%;
+height: 100%;
 }
 #header-products-heading,#header-offers-heading{display: flex;}
 #header-products-list > div{
@@ -177,27 +179,29 @@ width: 60%;
 }
 
 #freeTrial:hover{background-color: white;color: rgb(0, 157, 255);border: 2px solid blue;cursor: pointer;}
+
 #main img{height: 1200px;width: 100%;position: relative;}
+#main{  font-size: 10px;position: relative;}
 
 #main-heading{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  top:200px;
-  left: 200px;
+  top:20em;
+  left: 20em;
   height: 5%;
 }
 #main-heading h1{
-  font-size: 80px;
+  font-size: 8em;
   color: white;
   height: fit-content;
   font-family: 'Arimo', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 
 }
 #main-heading p{
-  font-size: 20px;
+  font-size: 2em;
   color: white;
   font-family: 'Inter', sans-serif;
 
@@ -206,14 +210,14 @@ width: 60%;
 #main-secondary{
   display: grid;
   background-color: white;
-  height: 1000px;
-  margin-top: 150px;
+  height: 100em;
+  margin-top: 15em;
   width: 90%;
-  margin-left: 50px;
+  margin-left: 5em;
   grid-template-columns: repeat(2,auto);
   grid-template-columns: repeat(2,auto);
-  row-gap: 30px;
-  column-gap: 30px;
+  row-gap: 3em;
+  column-gap: 3em;
 
 }
 
@@ -222,12 +226,12 @@ width: 60%;
   display: flex;
   height: 100%;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 5em;
   
 }
 .main-secondary-ques > div{display: flex;flex-direction: column;width: 40%;}
 .main-secondary-ques h1,#main_iframe h1,#main_reviews > h1{
-  font-size: 40px;
+  font-size: 4em;
   color: #041415;
   height: fit-content;
   font-family: 'Arimo', sans-serif;
@@ -237,7 +241,7 @@ width: 60%;
 .main-secondary-ques img{width: 60% !important;height: 100% !important;}
 
 .main-secondary-ques p,#main_reviews > p,#container h1{
-  font-size: 20px;
+  font-size: 2em;
   color: #155d62;
   height: fit-content;
   font-family: 'Inter', sans-serif;
@@ -251,19 +255,19 @@ width: 60%;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  height: 1000px;
-  margin-top: 250px;
+  height: 100em;
+  margin-top: 25em;
 }
 
 
-#main_iframe iframe{width: 90%;height: 70%;margin-top: 50px;  box-shadow: 10px 10px 20px 2px lightgray;
+#main_iframe iframe{width: 90%;height: 70%;margin-top: 5em;  box-shadow: 10px 10px 20px 0.02em lightgray;
 }
 
 #main_reviews{
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 500px;
+  width: 100%;
+  height: 50em;
   align-items: center;
   justify-content: center;
 }
@@ -272,15 +276,15 @@ width: 60%;
   display: grid;
   grid-template-columns: repeat(2,auto);
   grid-template-rows: repeat(2,auto);
-  column-gap: 10px;
-  height: 80%;
-margin-left: 200px;
+  column-gap: 1em;
+  height: 60em;
+margin-left: 3em;
   width: 100%;
-  row-gap: 20px;
+  row-gap: 2em;
 }
 #main_reviews_grid img{width: 50%;
 height: 50%;
-border-radius: 15px;}
+border-radius: 1.5em;}
 
 #main_reviews_grid > div{
   display: flex;
@@ -345,3 +349,80 @@ border-radius: 15px;}
 
 
   
+@media (max-width:1318px){
+
+  #main-secondary,#main_reviews_grid{
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,23%);
+    column-gap: 0em;
+    row-gap: 1em !important;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  
+  .main-secondary-ques{margin-bottom: 0;}
+  #main_reviews_grid div{margin-bottom: 1.5em;}
+  .main-secondary-ques img{width: 40% !important;height: 100% !important;}
+  #main_reviews_grid img{width: 20% !important;height: 100% !important;}
+}
+
+@media (max-width:1084px){
+ .main-secondary-ques h1{font-size: 3em;}
+ .main-secondary-ques p{font-size: 2em;}
+ 
+
+}
+
+  @media (max-width:845px){
+    .main-secondary-ques h1{font-size: 3em;}
+    .main-secondary-ques p{font-size: 1.5em;}
+    
+}
+
+@media (max-width:670px){
+  #main_reviews_grid div h1{font-size: 3em;}
+  #main_reviews_grid div h1{font-size: 2em;}
+
+  
+}
+
+
+@media (max-width:660px){
+  .main-secondary-ques h1{font-size: 1.5em;}
+  .main-secondary-ques p{font-size: 1.25em;}
+  
+}
+
+@media (max-width:350px)
+{
+  #main{height: 550px;width: 350px;}
+  #main-heading{top: 25px;left: 15px;height: 10%;}
+  #main-secondary{margin: 2em 0;height: 440px;}
+  .main-secondary-ques{height: 100px;}
+  .main-secondary-ques img{width: 30%;height: 100%;}
+  .main-secondary-ques h1{font-size: 1.5em;}
+  .main-secondary-ques p{font-size: 0.75em;margin: 0;margin-top: 10px;}
+  #main-heading h1{font-size: 2.5em}
+  #main-heading p{font-size: 1em;}
+  #main img{height: 300px;width: 100%;}
+  #main_iframe{margin: 0;margin-top: 50px;height: fit-content;margin-bottom: 150px;}
+  #main_iframe h1{font-size: 1.5em;}
+  #main_iframe iframe{height: 200px;margin-top: 20px;}
+  #main_reviews h1{font-size: 1.5em;}
+  #main_reviews p{font-size: 1em;}
+  #main_reviews_grid{margin-top: 30px;}
+}
+
+#mobileView{width: 350px;height: 650px;margin: 0 auto;}
+#mobileView iframe{width: 100%;height: 100%;}
+
+#view_type{margin-left: 1500px;
+margin-top: 100px;display: flex;}
+#view_type a{text-decoration: none;cursor: pointer;font-size: 17px;font-family: 400;}
+#view_type div{width: 100px;height: 50px;display: flex;justify-content: center;align-items: center;
+background-color: #b8d5d7;color: black;margin-right: 10px;cursor: pointer;}
+#view_type a:link{color: black;}
+#view_type a:visited{color: black;}
+#view_type a:hover{color: black;}
+#view_type a:active{color: black;}
